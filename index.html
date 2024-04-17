@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f5eefee45d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="circle" id="angleLeft">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle" id="bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="image">
+            <img src="sultan.jpg" alt="">
+        </div>
+        <div class="description">
+            <h1>Sultan</h1>
+            <p>(2016)</p>
+        </div>
+        <div class="audio">
+            <audio id="song">
+                <source src="04 - Sultan - DownloadMing.SE.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" name="" id="progress" value="1">
+        </div>
+        <div class="controls">
+            <div class="control" id="backward"><i class="fa-solid fa-backward"></i></div>
+            <div class="control" id="play" onclick="playPause()"><i class="fa-solid fa-play" id="playBtn"></i></i></div>
+            <div class="control" id="forward"><i class="fa-solid fa-forward"></i></div>
+        </div>
+    </div>  
+    
+    <script src="script.js"></script>
+</body>
+
+
+</html>
